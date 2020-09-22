@@ -1,0 +1,33 @@
+﻿@page "/employeeoverview"
+
+<h1 class="page-title">All employees</h1>
+
+@if (Employees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <td>Id</td>
+                <td>First name</td>
+                <td>Last name</td>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Employees)
+            {
+                <tr>
+                    <td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{employee.Id}-small.jpg")" class="rounded-circle" /></td>
+                    <td>@employee.Id</td>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

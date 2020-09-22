@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "babadinier.shop.app", "babadinier.shop.app\babadinier.shop.app.csproj", "{B2D26471-3EEB-46D6-848B-C20C43D89DBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "babadinier.shop.app", "babadinier.shop.app\babadinier.shop.app.csproj", "{B2D26471-3EEB-46D6-848B-C20C43D89DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "babadinier.shop.shared", "babadinier.shop.shared\babadinier.shop.shared.csproj", "{40AD3C1C-8ADD-44F9-AF73-EC190061FDDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "babadinier.shop.shared", "babadinier.shop.shared\babadinier.shop.shared.csproj", "{40AD3C1C-8ADD-44F9-AF73-EC190061FDDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
