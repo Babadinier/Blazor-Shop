@@ -1,4 +1,4 @@
-﻿@page "/employeeoverview"
+﻿@page "/employeeOverview"
 
 <h1 class="page-title">All employees</h1>
 
@@ -26,6 +26,9 @@ else
                     <td>@employee.Id</td>
                     <td>@employee.FirstName</td>
                     <td>@employee.LastName</td>
+                    <td>
+                        <a href="@($"employeeDetail/{employee.Id}")" class="btn btn-primary table-btn">Detail</a>
+                    </td>
                 </tr>
             }
         </tbody>

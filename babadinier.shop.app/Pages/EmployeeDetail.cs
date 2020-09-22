@@ -1,15 +1,20 @@
 ﻿using BethanysPieShopHRM.Shared;
+using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace babadinier.shop.app.Pages
 {
-    public partial class EmployeeOverview
+    public partial class EmployeeDetail
     {
+        [Parameter]
+        public string Id { get; set; }
+        public Employee Employee { get; set; } = new Employee();
+
         public IEnumerable<Employee> Employees { get; set; }
 
         private List<Country> Countries { get; set; }
-
         private List<JobCategory> JobCategories { get; set; }
 
         protected override void OnInitialized()
@@ -17,6 +22,8 @@ namespace babadinier.shop.app.Pages
             InitializeCountries();
             InitializeJobCategories();
             InitializeEmployees();
+
+            Employee = Employees.FirstOrDefault(e => e.Id == int.Parse(Id));
         }
 
         private void InitializeJobCategories()
@@ -96,5 +103,6 @@ namespace babadinier.shop.app.Pages
             };
             Employees = new List<Employee> { e1, e2 };
         }
+
     }
 }
